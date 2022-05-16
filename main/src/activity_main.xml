@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/m_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/hitchcutregular"
+        android:gravity="center"
+        android:text="Number Guessing Game!"
+        android:textColor="#ffde59"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/s_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="Ready?"
+        android:fontFamily="@font/montserratlight"
+        android:textColor="#bbe242"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/s_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#345c72"
+        android:text="START!"
+        android:fontFamily="@font/montserratmedium"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/t_rules"
+        android:layout_width="181dp"
+        android:layout_height="129dp"
+        android:layout_below="@+id/btn_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="-3dp"
+        android:fontFamily="@font/montserratmedium"
+        android:gravity="center"
+        android:text="A number is chosen between 1 to 30.
+        Guess the number within 3 trials"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/num_input"
+        android:background="#345c72"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/s_title"
+        android:layout_marginTop="86dp"
+        android:layout_marginLeft="55dp"
+        android:fontFamily="@font/montserratmedium"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        />
+
+
+    <TextView
+        android:id="@+id/strt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="START!"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserratmedium"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/t_introgss"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/num_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-65dp"
+        android:fontFamily="@font/montserratlight"
+        android:gravity="center"
+        android:text="Guess the number: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+
+
